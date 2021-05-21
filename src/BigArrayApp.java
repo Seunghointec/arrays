@@ -11,12 +11,14 @@ public class BigArrayApp {
 
     }
 
-    public static void fillArray(){
+public static void fillArray(int[] array){
+            Random rand = new Random();
+            for (int i = 0; i < array.length; i++) {
+                array[i] = i;
+                array[i] = rand.nextInt(45);
+                System.out.println(array[i]);
+            }
 
-
-
-
-    }
 
     public static void printArray(int[] array){
 
